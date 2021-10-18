@@ -8,6 +8,7 @@
 * [Contact](#contact)
 
 ### About the Project
+Handy little website for storing a team's basic information
 
 ### Built With
 * HTML
@@ -16,7 +17,7 @@
 
 ### Installation
 Walk Though Video:
-
+https://drive.google.com/file/d/1y7kLAgNdBw_DWibVGPKw2Co2wTM3D837/view
 GitHub Repository: https://github.com/urbanearthymama/teamgen
 
 ### Contact
