@@ -1,20 +1,35 @@
-const fs = require('fs')
+const fs = require('fs');
 const inquirer = require("inquirer");
 const generatePage = require('./src/page-template');
 
 const Employee = require("./lib/Employee");
 const Manager = require("./lib/Manager");
-;
 
-// const pageHTML = generatePage(name, github);
+let teamArray = []
 
-// fs.writeFile('index.html', generatePage(name, github), err => {
-//     if (err) throw err;
-  
-//     console.log('Portfolio complete! Check out index.html to see the output!');
-//   });
+addManager();
 
-// function entryPoint() {
+function addManager(){
+  // Have a prompt that asks all the manager questions
+  // .then() we save the manager in the team array and run the mainMenu() function
+}
+
+function mainMenu(){
+  // it should ask me do I want to add an engineer, and intern or do I want to build the team.
+}
+
+function addEngineer(){
+  // this function asks the engineer questions
+  //.then() save the engineer in the team array and run the mainMenu() function
+}
+
+function addIntern() {
+  // this function asks the intern questions
+  // .then() save the intern in the team array and run the mainMenu() function
+}
+function buildTeam() {
+  // this function generates the finished HTML pg and saves it
+}
   const promptUser = () => {
   return inquirer.prompt([
       {
@@ -63,8 +78,9 @@ const Manager = require("./lib/Manager");
   if (!employeeData.profiles) {
     employeeData.profiles = [];
   }
-
-
+ 
+  return inquirer
+  
   .then(teamMember => {
   employeeData.profile.push(teamMember);
   if (teamMember.confirmAddProfile) {
@@ -76,8 +92,14 @@ const Manager = require("./lib/Manager");
 
   promptUser()
   .then(promptProfile)
-  .then(employeeData => {
-    console.log(employeeData);
+  .then(employeeData => { 
+    // const pageHTML = generatePage();
+
+    // fs.writeFile('index.html', generatePage(name, github), err => {
+    //   if (err) throw err;
+    
+    //   console.log('Portfolio complete! Check out index.html to see the output!');
+    // });
   });
 
 
